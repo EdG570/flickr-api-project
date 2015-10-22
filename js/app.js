@@ -1,8 +1,6 @@
 $(document).ready(function(){
     $('form').submit(function(event){
       event.preventDefault();
-
-      //$('#results').addClass('pad');
       
       var flickerAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
       var animal = $('#search').val();
