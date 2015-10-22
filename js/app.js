@@ -4,6 +4,8 @@ $(document).ready(function(){
       
       var flickerAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
       var animal = $('#search').val();
+      $('#search').val('');
+      
       var flickrOptions = { 
         tags: animal,
         format: 'json'

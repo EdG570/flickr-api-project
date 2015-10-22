@@ -7,7 +7,7 @@ body {
 /*----------REUSABLE COMPONENTS-----------*/
 
 .container {
-  width: 1140px;
+  max-width: 1140px;
   margin: 0 auto;
 }
 
@@ -83,4 +83,43 @@ ul {
 img {
   border-radius: 5px;
 }
+
+/*-----------------MEDIA QUERIES---------------*/
+
+@media only screen and (max-width: 1250px){
+  .header-content {
+   margin-left: 2em;
+    }
+
+  #logo {
+    margin-left: 2em;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  #logo {
+    left: 5em;
+  }
+
+  .header-content {
+    width: 23em;
+    margin: 0 auto;
+  }
+
+  h2 {
+    width: 10em;
+    text-align: center;
+  }
+
+  ul,
+  #results {
+    margin: 0;
+  }
+
+  #results {
+    border-radius: 0px;
+  }
+
+}
+
 
