@@ -78,6 +78,7 @@ input:focus {
 ul {
   list-style: none;
   margin-top: 5em;
+  padding-left: 0;
 }
 
 img {
@@ -97,8 +98,19 @@ img {
 }
 
 @media only screen and (max-width: 550px) {
+  .container {
+    width: 100%;
+  }
   #logo {
-    left: 5em;
+    position: static;
+    display: block;
+    width: 10em;
+    margin: 0 auto;
+    margin-bottom: 12em;
+  }
+
+  #header {
+    padding: 1em 1em 18em 1em;
   }
 
   .header-content {
