@@ -15,7 +15,7 @@ body {
 /*----------HEADER SECTION------------*/
 
 #header {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/header-background.jpeg');
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/header-background-big.jpeg');
   background-position: center;
   background-size: cover;
   background-repeat: none;
@@ -120,6 +120,28 @@ img {
     border-radius: 0px;
   }
 
+}
+
+@media only screen and (max-width: 960px) {
+  #header {
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/header-background-med.jpeg');
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/header-background-med.jpeg');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/header-background-med.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  #header {
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/header-background-small.jpeg');
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/header-background-small.jpeg');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/header-background-small.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+  }
 }
 
 
